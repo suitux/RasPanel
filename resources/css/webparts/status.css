@@ -1,0 +1,81 @@
+/* Chart container */
+.chart_container {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/*---- Basic Style for charts ----*/
+.chart {
+	position: relative;
+	display: table;		/* To center vertical and horizontal the number */
+	text-align: center;
+	vertical-align: middle;
+}
+
+.chart canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.percent {
+	display: table-cell;
+	z-index: 2;
+	vertical-align: middle;
+	font-family: 'Roboto-thin';
+	font-size: 200%;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*---- Boxes ----*/
+.cpu, .ram {
+	width: 150px;
+	height: 150px;
+}
+/*---- CPU ----*/
+.cpu {
+	margin: 0 auto;
+}
+
+
+/*---- Dividers ----*/
+.divider {
+	width: 50%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/*---- RAM ----*/
+.ram_table {
+	margin: 0 auto;
+	width: 80%;
+}
+
+/*---- HDD ----*/
+.hdd_table {
+	margin: 0 auto;
+	width: 70%;
+	float: left;
+}
+
+.graphicbar {
+	width: 500px;
+	margin-right: 20px; 
+}
+
+
+
+/*---- TEMPERATURE ----*/
+
+.temperature_text {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 400%;
+	font-family: 'Roboto-thin';
+}
+
+.temperature_text span.celsius {
+	font-size: 60%;
+}

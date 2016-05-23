@@ -1,0 +1,44 @@
+/*_________    ____  __    ______
+ /_  __/   |  / __ )/ /   / ____/
+  / / / /| | / __  / /   / __/   
+ / / / ___ |/ /_/ / /___/ /___   
+/_/ /_/  |_/_____/_____/_____/   
+                                 */
+
+table.table {
+	border-collapse: collapse;
+	font-family: "Roboto";
+}
+
+table.table td, table.table th, table.table tr {
+	margin: 0;
+	padding: 7px;
+}
+
+table.table tr {
+	border-bottom: 1px solid #4C4C4C;
+	-webkit-transition: 0.1s all;
+}
+
+table.table tr:hover {
+	background-color: #CACACA;
+}
+
+table.vertical thead {
+	font-weight: bold;
+}
+
+table.vertical thead tr:hover {
+	background-color: transparent;
+}
+
+table.horizontal tr td:first-child {
+	font-weight: bold;
+}
+
+table.horizontal th {
+	font-weight: normal;
+}
+table.horizontal th:first-child {
+	font-weight: bold;
+}

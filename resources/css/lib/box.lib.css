@@ -1,0 +1,96 @@
+/*  ____  ____ _  __
+   / __ )/ __ \ |/ /
+  / __  / / / /   / 
+ / /_/ / /_/ /   |  
+/_____/\____/_/|_|  
+                    */
+div.box
+{
+	margin: 0px 15px 15px 0px;
+	-webkit-box-shadow: 4px 4px 10px 0px rgba(128,128,128,1);
+	-moz-box-shadow: 4px 4px 10px 0px rgba(128,128,128,1);		/*Sombras de la caja*/
+	box-shadow: 4px 4px 10px 0px rgba(128,128,128,1);
+	border: solid 1px black;
+	float: left;
+}
+
+div.box header {
+	width: 100%;
+	height: 15%;
+	text-align: center;
+	display: table;
+	border-bottom: solid 1px black;
+}
+
+div.box header span {
+	display: table-cell;
+	vertical-align: middle;
+	font-family: "Roboto-light";
+}
+
+div.box div.content {
+	background-color: transparent;
+	width: 98%;
+	height: 83%;
+	padding: 1% 0% 0% 1%;
+}
+
+div.box div.table {
+	display: table;
+}
+
+div.box-packer {
+	float: left;
+}
+
+/* _____ _________   ___________
+  / ___//  _/__  /  / ____/ ___/
+  \__ \ / /   / /  / __/  \__ \ 
+ ___/ // /   / /__/ /___ ___/ / 
+/____/___/  /____/_____//____/  
+                                */
+
+div.height-big {
+	height: 450px;
+}
+
+div.height-medium {
+	height: 217px;
+}
+
+div.height-small {
+	height: 100px;
+}
+
+
+/* ---- WIDTH ---- */
+
+div.width-big {
+	width: 700px;
+}
+
+div.width-medium {
+	width: 342px;
+}
+
+div.width-small {
+	width: 163px;
+}
+
+div.width-tinny {
+	width: 74px;
+}
+
+/* ---- Font Sizes ---- */
+
+div.box.height-big header span {
+	font-size: 200%;
+}
+
+div.box.height-medium header span {
+	font-size: 120%;
+}
+
+div.box.height-small header span {
+	font-size: 60%;
+}

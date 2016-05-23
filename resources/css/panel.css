@@ -1,0 +1,38 @@
+@import url("base.css");
+@import url("components/left_bar.css");
+
+body {
+	padding-left: 3.5em;		/*Adding padding considering the left_bar size */
+}
+
+
+/*  ____  ___    _   __________       ____  ____  ______  __
+   / __ \/   |  / | / / ____/ /      / __ )/ __ \/ __ \ \/ /
+  / /_/ / /| | /  |/ / __/ / /      / /_/ / / / / / / / /\/ 
+ / ____/ ___ |/ /|  / /___/ /___   / /_/ / /_/ / /_/ / / /  
+/_/   /_/  |_/_/ |_/_____/_____/  /_____/\____/_____/ /_/   
+                                                            */
+
+#panel_body {
+	height: 100%;
+	width: 100%;
+}
+
+#panel_body #panel_container {
+	width: 99%;
+	height: 98%;
+	padding: 1% 0% 0% 1%;
+}
+
+#panel_body #panel_container #logo_image_container {
+	z-index: -1;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+}
+#panel_body #panel_container #logo_image_container #logo_image {
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}

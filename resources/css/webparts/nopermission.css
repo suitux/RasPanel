@@ -1,0 +1,17 @@
+@import url("../lib/box.lib.css");
+
+div.box {
+	float: none;
+	margin: 0 auto;
+}
+
+div.box div.content {
+	display: table;
+}
+
+div.box div.content p {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 200%;
+}

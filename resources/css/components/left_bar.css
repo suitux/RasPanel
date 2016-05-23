@@ -1,0 +1,126 @@
+/*  __    __________________   ____  ___    ____ 
+   / /   / ____/ ____/_  __/  / __ )/   |  / __ \
+  / /   / __/ / /_    / /    / __  / /| | / /_/ /
+ / /___/ /___/ __/   / /    / /_/ / ___ |/ _, _/ 
+/_____/_____/_/     /_/    /_____/_/  |_/_/ |_|  
+                                                 */
+
+#left_bar a:link 	{ color: inherit; text-decoration: none;}   /* unvisited link */
+#left_bar a:visited { color: inherit; text-decoration: none;}  	/* visited link */
+#left_bar a:hover 	{ color: inherit; text-decoration: none;}  	/* mouse over link */
+#left_bar a:active 	{ color: inherit; text-decoration: none;}  	/* selected link */
+
+#left_bar {
+	min-width: 3.5em;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-family: "Roboto";
+	position: fixed;
+}
+
+#left_bar img {
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+	margin: 5px auto;
+	display: block;
+}
+
+#left_bar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0;
+}
+
+#left_bar ul.extra {
+	position: absolute;
+	bottom: 0;
+}
+
+#left_bar ul li {
+	height: 50px;
+	width: 100%;
+	line-height: 50px;
+	display: table;
+}
+
+#left_bar ul li a {
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 0.4s;
+	transition-property: all;
+	transition-duration: 0.4s;
+}
+
+/*ToolTips for Left Bar's A*/
+#left_bar ul li a {outline:none; }
+#left_bar ul li a:hover {text-decoration:none;} 
+#left_bar ul li a span {
+	z-index: 10;
+	line-height: 16px;
+	white-space: nowrap;
+	padding: 5px;
+	margin-left: 1.5em;
+	opacity: 0.8;
+	border-radius:4px;
+	box-shadow: 5px 5px 8px #CCC;
+	display: none;
+}
+#left_bar ul li a:hover span {
+	display: inline; 
+	position: absolute; 
+	left: 45px;
+	background-color: #000000;
+	color: white;
+	border-radius: 0;
+}
+
+/*CSS3 extras*/
+#left_bar ul li a span:before{
+	content:'';
+	display:block;
+	width:0;
+	height:0;
+	position:absolute;
+
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent; 
+	border-right:5px solid black;
+	left:-5px;
+
+	top:8px;
+}
+
+
+#left_bar ul li a i {
+	font-size: 200%;
+}
+
+#left_bar ul li a:hover {
+	background-color: #A6A6A6;
+}
+
+/* DISABLED BUTTON: */
+#left_bar ul li.disabled {
+	color: #9B9B9B;
+}
+
+#left_bar ul li.disabled a {
+	cursor: default;
+	pointer-events: none;
+}
+
+#left_bar ul li.disabled a:hover {
+	background-color: transparent;
+}
+
+#left_bar ul li.disabled span:hover {
+	background-color: red;
+}
